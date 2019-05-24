@@ -1,13 +1,15 @@
 {
-  "name": "instinfo",
+  "name": "instsearch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.0.0-beta.2",
     "@material-ui/icons": "^4.0.0-beta.0",
     "@material-ui/styles": "^4.0.0-beta.2",
+    "axios": "^0.18.0",
     "bizcharts": "^3.5.2",
     "classnames": "^2.2.6",
+    "luxon": "^1.13.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
@@ -35,5 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:9200"
+  "proxy": "http://gcp-es-1:9200"
 }

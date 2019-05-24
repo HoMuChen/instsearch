@@ -33,7 +33,7 @@ class Statistics extends Component {
               className={classes.value}
               variant="h3"
             >
-              { this.props.prefix }{ this.props.number }{ this.props.postfix }
+              { this.props.prefix }{ this.props.number.toLocaleString() }{ this.props.postfix }
             </Typography>
           </div>
           <div className={classes.iconWrapper} style={{ backgroundColor: this.props.titleIconColor }}>
@@ -68,5 +68,9 @@ Statistics.propTypes = {
   postfix:         PropTypes.string,
   titleIconColor:  PropTypes.string,
 };
+
+Statistics.defaultProps = {
+  number:          0,
+}
 
 export default withStyles(styles)(Statistics);

@@ -18,9 +18,9 @@ import {
 import {
   DashboardOutlined as DashboardIcon,
   SearchOutlined as SearchIcon,
-  ShoppingBasketOutlined as ShoppingBasketIcon,
+  LocationOnOutlined as LocationOnIcon,
   InfoOutlined as InfoIcon,
-  AccountBoxOutlined as AccountBoxIcon,
+  PeopleOutlined as PeopleIcon,
   SettingsOutlined as SettingsIcon
 } from '@material-ui/icons';
 
@@ -40,7 +40,7 @@ class Sidebar extends Component {
             to="/"
           />
           <Typography variant="h1" component="h2" className={classes.title}>
-            InSearch
+            InstSearch
           </Typography>
         </div>
         <Divider className={classes.logoDivider} />
@@ -66,42 +66,42 @@ class Sidebar extends Component {
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/search"
+            to="/search-medias"
           >
             <ListItemIcon className={classes.listItemIcon}>
               <SearchIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Search"
+              primary="Search Medias"
             />
           </ListItem>
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/products"
+            to="/search-users"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <ShoppingBasketIcon />
+              <PeopleIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Products"
+              primary="Search Users"
             />
           </ListItem>
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/account"
+            to="/search-locations"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <AccountBoxIcon />
+              <LocationOnIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Account"
+              primary="Search Locations"
             />
           </ListItem>
           <ListItem
